@@ -2,26 +2,26 @@
 
 # Created by: Marshall Demars
 # Created on: Nov 2022
-# This program squares each number from 0 up to the users number
+# This program squares each number from 0 up to the user input
 
 
 def main():
-    # This function squares each number from 0 up to the users number
+    # This program squares each number from 0 up to the user input
     counter = 0
-    answer = 0
+    squared_answer = 0
 
     # Input
-    integer_s = input("Enter an integer >= 0: ")
+    integer_as_string = input("Enter an integer >= 0: ")
     print("")
 
     # Process and Output
     try:
-        integer = int(integer_s)
-        if integer < 0:
+        integer_as_int = int(integer_as_string)
+        if integer_as_int < 0:
             print("You did not enter a positive integer.")
-        for counter in range(integer + 1):
-            answer = counter ** 2
-            print("{0}² = {1}² ".format(counter, answer))
+        for counter in range(integer_as_int + 1):
+            squared_answer = counter ** 2
+            print("{0}² = {1}² ".format(counter, squared_answer))
 
     except Exception:
         print("Invalid input.")
