@@ -20,7 +20,7 @@ def main():
         if integer_as_int < 0:
             print("You did not enter a positive integer.")
         for counter in range(integer_as_int + 1):
-            squared_answer = counter ** 2
+            squared_answer = counter**2
             print("{0}² = {1}² ".format(counter, squared_answer))
 
     except Exception:
