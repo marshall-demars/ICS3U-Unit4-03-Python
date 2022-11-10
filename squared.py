@@ -12,19 +12,18 @@ def main():
 
     # Input
     integer_as_string = input("Enter an integer >= 0: ")
-    print("")
 
     # Process and Output
     try:
         integer_as_int = int(integer_as_string)
         if integer_as_int < 0:
-            print("Please enter a positive number.")
+            print("\nPlease enter a positive number.")
         for counter in range(integer_as_int + 1):
             squared_answer = counter**2
-            print("{0}² = {1}² ".format(counter, squared_answer))
+            print("\n{0}² = {1}² ".format(counter, squared_answer))
 
     except Exception:
-        print("Please input a valid number.")
+        print("\nPlease input a valid number.")
 
     print("\nDone.")
 
