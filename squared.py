@@ -11,7 +11,7 @@ def main():
     squared_answer = 0
 
     # Input
-    integer_as_string = input("Enter an integer >= 0: ")
+    integer_as_string = input("Enter a positive integer: ")
 
     # Process and Output
     try:
